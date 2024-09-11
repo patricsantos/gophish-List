@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão e Aceitação da Nova Política de Segurança</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Revisão e Aceitação da Nova Política de Segurança</h2>
+    <p>Para garantir que você esteja ciente das novas políticas de segurança da PegPese, por favor, preencha os campos abaixo para confirmar que você leu e aceitou as atualizações.</p>
+    <form action="{{.ActionURL}}" method="post">
+        <label for="name">Nome Completo:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="position">Cargo:</label>
+        <input type="text" id="position" name="position" required><br>
+        <label for="department">Departamento:</label>
+        <input type="text" id="department" name="department" required><br>
+        <input type="submit" value="Confirmar Aceitação">
+    </form>
+</body>
+</html>
